@@ -28,8 +28,5 @@ public class Test extends LinearOpMode {
 //            telemetry.addLine(String.valueOf(motor.getCurrentPosition()));
 //            telemetry.update();
 //        }
-        ForwardTuner tuner = new ForwardTuner();
-        tuner.init_loop();
-        // Multiplier: 1.2769911882186948
     }
 }
