@@ -11,22 +11,22 @@ public class Test extends LinearOpMode {
     Servo servo;
     @Override
     public void runOpMode(){
-//        motor = hardwareMap.get(DcMotor.class, "test_motor");
-//        servo = hardwareMap.get(Servo.class, "test_servo");
-//        waitForStart();
-//        while(opModeIsActive()) {
-//            if (gamepad1.dpad_down) {
-//                motor.setPower(0.5);
-//                servo.setPosition(0.5);
-//            } else if (gamepad1.dpad_up) {
-//                motor.setPower(-0.5);
-//                servo.setPosition(0);
-//            } else{
-//                motor.setPower(0);
-//            }
-//            // This makes the motor position show up on the screen (driver station)
-//            telemetry.addLine(String.valueOf(motor.getCurrentPosition()));
-//            telemetry.update();
-//        }
+        motor = hardwareMap.get(DcMotor.class, "test_motor");
+        servo = hardwareMap.get(Servo.class, "test_servo");
+        waitForStart();
+        while(opModeIsActive()) {
+            if (gamepad1.dpad_down) {
+                motor.setPower(0.1);
+                servo.setPosition(0.5);
+            } else if (gamepad1.dpad_up) {
+                motor.setPower(-0.1);
+                servo.setPosition(0);
+            } else{
+                motor.setPower(0);
+            }
+            // This makes the motor position show up on the screen (driver station)
+            telemetry.addLine(String.valueOf(motor.getCurrentPosition()));
+            telemetry.update();
+        }
     }
 }

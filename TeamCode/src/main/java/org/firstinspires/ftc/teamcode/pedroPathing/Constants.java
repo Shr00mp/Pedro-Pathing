@@ -50,7 +50,11 @@ public class Constants {
             .rightRearEncoderDirection(Encoder.FORWARD)
             .robotLength(18)
             .robotWidth(18)
-            .forwardTicksToInches(0.0058724387777206385)
-            .strafeTicksToInches(0.003374368161656415)
-            .turnTicksToInches(0.006146212569907357);
+            .forwardTicksToInches(0.1518775789131369072)
+            .strafeTicksToInches(0.022519816462183765)
+            .turnTicksToInches(0.02998338693776045);
+    // list of our issues:
+    // - It doesn't stop (with the forward velocity and lateral velocity)
+    // - It goes very fast (we haven't tried changing the power yet though)
+    // - It does not go directly sideways... it goes in a diagonal :(
 }
